@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="821.0"
+            xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="cv6pocitacovagrafika.Controller">
+   <children>
+      <TableView fx:id="tableViewStudenti" editable="true" layoutX="14.0" layoutY="32.0" prefHeight="398.0" prefWidth="374.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="84.33331298828125" text="ID" />
+          <TableColumn fx:id="tableColumnJmeno" prefWidth="82.66668701171875" text="Jmeno" />
+            <TableColumn fx:id="tableColumnPrijmeni" prefWidth="104.3333740234375" text="Prijmeni" />
+            <TableColumn fx:id="tableColumnRocnik" prefWidth="102.0" text="Rocnik" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="435.0" mnemonicParsing="false" onAction="#handlePridejStudenta" prefHeight="32.0" prefWidth="171.0" text="Pridej noveho studenta" />
+      <Button layoutX="207.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleSmazStudenta" prefHeight="32.0" prefWidth="180.0" text="Smaz vybraneho studenta" />
+      <PieChart fx:id="pieChart" layoutX="400.0" layoutY="32.0" prefHeight="434.0" prefWidth="407.0" title="Rozdeleni studentu" />
+   </children>
+</AnchorPane>

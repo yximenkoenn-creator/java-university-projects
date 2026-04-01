@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>To-do list</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    input {
+      padding: 8px;
+      font-size: 16px;
+      width: 300px;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    li {
+      padding: 12px;
+      margin: 8px 0;
+      background: #f0f0f0;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+
+    li:hover {
+      background: #e0e0e0;
+    }
+
+    .hotovo {
+      text-decoration: line-through;
+      color: #888;
+      background: #d0d0d0;
+    }
+  </style>
+</head>
+<body>
+  <h1>To-do list</h1>
+
+  <input id="novyUkol" type="text" placeholder="Nový úkol">
+  <button id="pridat">Přidat</button>
+
+  <ul id="seznam"></ul>
+
+  <script src="ulohaToDo_27_11.js"></script>
+</body>
+</html>
